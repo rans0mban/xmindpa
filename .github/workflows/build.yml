@@ -3,6 +3,9 @@ name: Build Mac App
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write        # 加这个，允许创建 Release
+
 jobs:
   build:
     runs-on: macos-latest
